@@ -44,7 +44,6 @@ module worker_pools {
   source            = "./worker_pools"
   ibm_region        = var.ibm_region
   pool_list         = var.worker_pools
-  entitlement       = var.entitlement
   vpc_id            = data.ibm_is_vpc.vpc.id
   resource_group_id = data.ibm_resource_group.resource_group.id
   cluster_name_id   = ibm_container_vpc_cluster.cluster.id
