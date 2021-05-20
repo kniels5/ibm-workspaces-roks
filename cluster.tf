@@ -12,7 +12,7 @@ resource ibm_container_vpc_cluster cluster {
   kube_version      = var.kube_version != "" ? var.kube_version : null
   tags              = var.tags
   wait_till         = var.wait_till
-  entitlement       = var.entitlement
+  #entitlement       = var.entitlement
   cos_instance_crn  = module.resources.cos_id
 
   dynamic zones {
